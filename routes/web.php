@@ -19,3 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/question', 'HomeController@question')->name('question');
+
+
+// TASKS //
+Route::get('tasks/dashboard', 'TaskController@dashboard')->name('tasks.dashboard');
+Route::get('tasks/app', 'TaskController@app')->name('tasks.app');
+Route::resource('tasks', 'TaskController');

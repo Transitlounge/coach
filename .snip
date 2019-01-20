@@ -1,0 +1,43 @@
+#### My Snippets ###
+
+
+### links ###
+https://medium.com/modulr/create-api-authentication-with-passport-of-laravel-5-6-1dc2d400a7f
+
+### CURL API TESTING ###
+ -H "Accept: application/json" \
+
+curl -k https://coach.test/api/tasks/1
+
+curl -k https://coach.test/api/tasks \
+ -H "Content-Type: application/json" \
+ -H "X-Requested-With: XMLHttpRequest" \
+ -d '{"name": "Testestter3", "description": "api test 3", "user_id": "1"}'
+
+ curl -X PUT -k https://coach.test/api/tasks/4 \
+ -H "Content-Type: application/json" \
+ -H "X-Requested-With: XMLHttpRequest" \
+ -d '{"name": "Updated test"}'
+
+
+
+curl -k https://coach.test/api/auth/signup \
+ -H "Content-Type: application/json" \
+ -H "X-Requested-With: XMLHttpRequest" \
+ -d '{"name": "Tester", "email": "tester@tl.one", "password": "test123", "password_confirmation": "test123"}'
+
+curl -k https://coach.test/api/auth/login \
+ -H "Content-Type: application/json" \
+ -H "X-Requested-With: XMLHttpRequest" \
+ -d '{"email": "tester@tl.one", "password": "test123", "remember_me": true}'
+
+curl -k https://coach.test/api/auth/logout \
+ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjAyN2JhMWZmYzdkOTdlNzBjOGY0ZTI1NGQ0MGRiZWMxYjAwZTdmMDYyOTNhNTJhYWVlYzIwMjIxMDAyYTYxZTlkNWQwOTBjZGE3NzE4MzU3In0.eyJhdWQiOiIxIiwianRpIjoiMDI3YmExZmZjN2Q5N2U3MGM4ZjRlMjU0ZDQwZGJlYzFiMDBlN2YwNjI5M2E1MmFhZWVjMjAyMjEwMDJhNjFlOWQ1ZDA5MGNkYTc3MTgzNTciLCJpYXQiOjE1NDc2NDc5MDgsIm5iZiI6MTU0NzY0NzkwOCwiZXhwIjoxNTc5MTgzOTA4LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.Oz2MX2Qr5XB9BmhxVGA3ME1NyP1YcJghvlvkibP8U2rj3KyjIJNYgJJ8olYgRWTv1nGOlJZ3Dq7XCgkK6KaIKFGXtUg8BBunLOM7vi46igym-QKqxcHI7JI7SMANizbSaLaUv4N36g_9fEriIV9g10aFFe2fRqCJdVUAUA_L-NK_tQk4MkJGx-znuQIfZaLoZ8N52uh5Ayai7_3YvN7h-IJZ3P5gvs1X92cVdhu6Uvc-eFLZ8s0W2oeuijunr4MBnN6UmZnBBtUI47LO07CThOxPQK7lQ5BMYjhfVFQoS22qarflU4yDVCyLxu_1VXryn1MTgdq6FKCi6aljyQgzckZUZUBzSdH-mhUC4CTzwSa-4lNNQqU7OaSgMFL7UQY4Kho-R9Fi3VTi_-dGvdJoqKkL6-2LniwKAxrWU1wJrajudB_5rIOYq4IGbDw6CQFKSotaGqN-fDMftQsqLy0KqoiN7nOwqU32gmjrAn0Ah8TyL2UvXg57MnT1jaoANDpGnmUq_hR0fdhylzT_nf3cQDEhXTKacVI43AAolD0LJCTPtPWCNfVQY9uEfCVSsxl0Q9ee1i9vxxIXawymlCca1IDe0CbM2WdAjncDnidlYoQhuRZQ_Ql5gC_uC7t0Pkf4PlcQYkR41cJxwxUT64qGdqTzSp2oi0g2ADsssJVXYJ0" 
+
+curl -k https://coach.test/api/auth/user \
+ -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU4ZTRmOWEwZDgxMDQ4ZDM4OTIyMWE2M2ZkOWEyYjA5MTk3MWIxM2JjZWIzZTRmZjJkNmYyOWI4NDExZmY3MzRjZjNjMTVmZWQ2ODI1ZmFiIn0.eyJhdWQiOiIxIiwianRpIjoiZThlNGY5YTBkODEwNDhkMzg5MjIxYTYzZmQ5YTJiMDkxOTcxYjEzYmNlYjNlNGZmMmQ2ZjI5Yjg0MTFmZjczNGNmM2MxNWZlZDY4MjVmYWIiLCJpYXQiOjE1NDc2NDgxMzgsIm5iZiI6MTU0NzY0ODEzOCwiZXhwIjoxNTc5MTg0MTM4LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LOuWji8FLi8NmdUmQeQ-u2Hr7G3a-jp8TMeEZ3o1PVtmFyYA2p-RV2zlVsqzE79N69P_wS6enBchtMH3mvTJJ6bkm7kEURufvu5uOspeKkRITHZ39o6zPiAp40mxBApFTgbryUnMKZmXg2TJw5rUvcnjZ0FjaoGkNKaHFUgg_dtcukCiNQEciGyPJm6HXPGKo8aqJCE8guTWyM-2VUb4C_arJWDDgzEIewYFzz0tNvu00xUjKmyLmwxvEeUVwE0mDc2aWh_PV15E-hGGpihRM-xYHYqCf8JEf0ncONFyY3oAsafN6uARXPU5YONXYd2Bct_-E_7CfF4ra2q8eqY-u2_0J-dQHGgxKR-o6ZaVu35FGX5h8TWlqa25xF-ewumd3nnS3Dp-iuFwsdFqEzVyRMNeGBFFqb1vzEkGsP5GIJsPY5DyE5gCqBfW4DlZxz51TCatERqWI0Ush51XoD5beIDQvUab5Dtatps_BYECTN4drkk6CxITZhDBJnPpSkm4nnYVTghlN3w2Z8wtHHOCGdSnyVAmRzYgHbKe74nEuWvhucMy_LDois9t13ZiMbAXDh07AJduFVi_VfHJ6ZNC4Se1ZaLy5MYIARPhIilt_t5TgajeOt6zdBvTQ2bzIJCuuBdelXHJes4WT4zce-gh3lmZULqiMFijO-7VP6sd3Zs"
+
+
+
+
+ 							// @blur= "updateTask()"

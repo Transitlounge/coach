@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Transitlounge';
+  src:  url('#{$icomoon-font-path}/Transitlounge.eot?r0hnlm');
+  src:  url('#{$icomoon-font-path}/Transitlounge.eot?r0hnlm#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/Transitlounge.ttf?r0hnlm') format('truetype'),
+    url('#{$icomoon-font-path}/Transitlounge.woff?r0hnlm') format('woff'),
+    url('#{$icomoon-font-path}/Transitlounge.svg?r0hnlm#Transitlounge') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tl-icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Transitlounge' !important;
+	display: inline-block;
+  //speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+	letter-spacing: normal;
+	font-size: 24px;
+  line-height: 1;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.transitlounge-logo {
+  &:before {
+    content: $transitlounge-logo;
+  }
+}
+
+
+
+

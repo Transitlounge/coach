@@ -20,6 +20,7 @@
                         <li>Check you progress </li>
                         <li>Ask for help</li>
                         <li>Go to your personal tasks</li>
+                        <li><a href="/tasks/dashboard">Manage Tasks</a></li>
                     </ul>
 
                 </div>
